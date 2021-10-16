@@ -28,7 +28,7 @@ body {
 .button.r, .button.r .layer {
   border-radius: 108px;
   background-color: transparent;
-  border: 3px solid #151515;
+  border: 2px solid #151515;
 }
 
 .button.b2 {
@@ -87,14 +87,14 @@ body {
   padding: 15px 0;
 }
 
-#button-3 .checkbox:active+.knobs:before {
+/* #button-3 .checkbox:active+.knobs:before {
   width: 46px;
   border-radius: 100px;
 }
 
 #button-3 .checkbox:checked:active+.knobs:before {
   margin-left: -26px;
-}
+} */
 
 #button-3 .checkbox:checked+.knobs:before {
   content: 'Черный';
@@ -126,3 +126,38 @@ body {
 .header__text {
   color: #151515;
 }
+
+.benefits {
+  background-image: url(../images/bg-light.jpg);
+}
+
+.container {}
+
+.benefits__title {
+  color: #151515;
+}
+
+.benefits__inner {}
+
+.benefits__item {
+  color: #757473;
+  transition: all 0.5s;
+}
+
+.benefits__item:hover .benefits__item-title  {
+  color: #FF4C0D;
+}
+
+
+
+.benefits__item-title:hover {}
+
+.benefits__item-text:hover {
+  color: #151515;
+}
+
+.benefits__images {}
+
+.benefits__images-left {}
+
+.benefits__images-right {}

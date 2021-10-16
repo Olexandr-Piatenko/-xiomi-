@@ -28,7 +28,7 @@ body {
 .button.r, .button.r .layer {
   border-radius: 108px;
   background-color: transparent;
-  border: 3px solid #f1f1f1;
+  border: 2px solid #f1f1f1;
 }
 
 .button.b2 {
@@ -87,14 +87,14 @@ body {
   padding: 15px 0;
 }
 
-#button-3 .checkbox:active+.knobs:before {
+/* #button-3 .checkbox:active+.knobs:before {
   width: 46px;
   border-radius: 100px;
 }
 
 #button-3 .checkbox:checked:active+.knobs:before {
   margin-left: -26px;
-}
+} */
 
 #button-3 .checkbox:checked+.knobs:before {
   content: 'Белый';
@@ -127,14 +127,33 @@ body {
   color: #FF4C0D;
 }
 
-.theme-button {}
+.benefits {
+  background-image: url(../images/bg-dark.jpg);
+}
 
-.button {}
+.container {}
 
-.r {}
+.benefits__title {
+  color: #F1F1F1;
+}
 
-.checkbox {}
+.benefits__inner {}
 
-.knobs {}
+.benefits__item {
+  color: #757473;
+  transition: all 0.5s;
+}
 
-.layer {}
+.benefits__item:hover {
+  color: #f1f1f1;
+}
+
+.benefits__item-title {}
+
+.benefits__item-text {}
+
+.benefits__images {}
+
+.benefits__images-left {}
+
+.benefits__images-right {}
