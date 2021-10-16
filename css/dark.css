@@ -1,0 +1,140 @@
+body {
+  background-color: brown;
+}
+
+.logo__images {
+  background-image: url(../images/logo-black.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button-cover, .knobs, .layer {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 250px;
+  height: 55px;
+  /* margin: -20px auto 0 auto; */
+  overflow: hidden;
+}
+
+.button.r, .button.r .layer {
+  border-radius: 108px;
+  background-color: transparent;
+  border: 3px solid #f1f1f1;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button-3 .knobs:before {
+  content: 'Белый';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 100%;
+  color: #151515;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  /* padding: 5px 0; */
+  background-color: #f1f1f1;
+  border-radius: 65px;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#button-3::before {
+  content: 'Черный';
+  position: absolute;
+  left: 160px;
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  padding: 15px 0;
+}
+
+#button-3 .checkbox:active+.knobs:before {
+  width: 46px;
+  border-radius: 100px;
+}
+
+#button-3 .checkbox:checked:active+.knobs:before {
+  margin-left: -26px;
+}
+
+#button-3 .checkbox:checked+.knobs:before {
+  content: 'Белый';
+  left: 0;
+  background-color: #f1f1f1;
+  color: #151515;
+}
+
+#button-3 .checkbox:checked~.layer {
+  background-color: #fcebeb;
+}
+
+.header {
+  background-image: url(../images/background-dark.jpg);
+}
+
+.menu__item-link {
+  color: #f1f1f1;
+}
+
+.menu__item-link::before {
+  color: #eaaf0e;
+}
+
+.header__title {
+  color: #f1f1f1;
+}
+
+.header__text {
+  color: #FF4C0D;
+}
+
+.theme-button {}
+
+.button {}
+
+.r {}
+
+.checkbox {}
+
+.knobs {}
+
+.layer {}
