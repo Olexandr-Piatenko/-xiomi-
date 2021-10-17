@@ -1,6 +1,4 @@
-body {
-  background-color: brown;
-}
+body {}
 
 .logo__images {
   background-image: url(../images/logo-black.png);
@@ -157,3 +155,16 @@ body {
 .benefits__images-left {}
 
 .benefits__images-right {}
+
+.content__logo-images {
+  background-image: url(../images/logo-black.png);
+  margin: 120px 0 95px;
+}
+
+.advantages {
+  background-image: url(../images/advantages__dark-bg.jpg);
+}
+
+.advantages__bottom-text {
+color: #F1F1F1;
+}

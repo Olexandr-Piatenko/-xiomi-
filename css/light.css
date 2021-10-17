@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .logo__images {
@@ -137,18 +137,18 @@ body {
   color: #151515;
 }
 
-.benefits__inner {}
-
-.benefits__item {
+.benefits__inner {
   color: #757473;
   transition: all 0.5s;
 }
 
-.benefits__item:hover .benefits__item-title  {
-  color: #FF4C0D;
+.benefits__item:hover {
+  color: #151515;
 }
 
-
+.benefits__item:hover .benefits__item-title {
+  color: #FF4C0D;
+}
 
 .benefits__item-title:hover {}
 
@@ -161,3 +161,20 @@ body {
 .benefits__images-left {}
 
 .benefits__images-right {}
+
+.content__logo-images {
+  background-image: url(../images/logo-black.png);
+  margin: 120px 0 95px;
+}
+
+.advantages {
+  background-image: url(../images/advantages__light-bg.jpg);
+}
+
+.advantages__bottom-text {
+  color: #151515;
+}
+
+.advantages__top-title {
+  color: #151515;
+}
