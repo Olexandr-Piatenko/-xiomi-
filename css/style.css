@@ -574,6 +574,31 @@ body {
   border-radius: 5px;
 }
 
+.content__bottom {
+  background-image: url(../images/content__bg-bottom.jpg);
+}
+
+.content__logo-bottom {}
+
+.content__logo-images {}
+
+.logo__images-bottom {
+  background-image: url(../images/logo-light.png);
+  margin: 120px 0 95px;
+}
+
+.content__title-bottom {
+  color: #FF4C0D;
+}
+
+.content__text-bottom {
+  color: #151515;
+}
+
+p.content__text-bottom {
+  padding-bottom: 15px;
+}
+
 @font-face {
   font-family: 'Gilroy Medium';
   src: url('../fonts/Gilroy-Medium.eot');
