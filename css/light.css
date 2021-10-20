@@ -178,3 +178,23 @@ body {
 .advantages__top-title {
   color: #151515;
 }
+
+.carousel {
+  background-image: url(../images/caoursel-light.jpg);
+}
+
+.carousel__item-box::after {
+  background-color: #FF4C0D;
+}
+
+.carousel__item-box {
+  background-color: #f1f1f1;
+}
+
+.carousel__item-title {
+  color: #151515;
+}
+
+.carousel__item-text {
+  color: #151515;
+}

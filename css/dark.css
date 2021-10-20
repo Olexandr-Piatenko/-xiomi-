@@ -166,5 +166,25 @@ body {}
 }
 
 .advantages__bottom-text {
-color: #F1F1F1;
+  color: #F1F1F1;
+}
+
+.carousel {
+  background-image: url(../images/caoursel-bg.jpg);
+}
+
+.carousel__item-box::after {
+  background-color: #FF4C0D;
+}
+
+.carousel__item-box {
+  background-color: #151515;
+}
+
+.carousel__item-title {
+  color: #f1f1f1;
+}
+
+.carousel__item-text {
+  color: #f1f1f1;
 }
