@@ -45,14 +45,14 @@ body {}
 }
 
 .knobs {
-  z-index: 2;
+  z-index: 12;
 }
 
 .layer {
   width: 100%;
   background-color: #ebf7fc;
   transition: 0.3s ease all;
-  z-index: 1;
+  z-index: 11;
 }
 
 #button-3 .knobs:before {
@@ -187,4 +187,77 @@ body {}
 
 .carousel__item-text {
   color: #f1f1f1;
+}
+
+.question {
+  background-image: url(../images/ques-black.jpg);
+  color: #F1F1F1;
+}
+
+.question__btn {
+  z-index: 10;
+}
+
+.question__card {
+  position: relative;
+  background-image: url(../images/card-black.jpg);
+}
+
+.question__card::after {
+  content: url('../images/bak-dark.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -90px;
+  left: 335px;
+}
+
+#button-3 .knobs:before {
+  content: 'Белый';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 100%;
+  color: #151515;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  /* padding: 5px 0; */
+  background-color: #f1f1f1;
+  border-radius: 65px;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#button-3::before {
+  content: 'Черный';
+  position: absolute;
+  left: 160px;
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  padding: 15px 0;
+}
+
+/* #button-3 .checkbox:active+.knobs:before {
+  width: 46px;
+  border-radius: 100px;
+}
+
+#button-3 .checkbox:checked:active+.knobs:before {
+  margin-left: -26px;
+} */
+
+#button-3 .checkbox:checked+.knobs:before {
+  content: 'Белый';
+  left: 0;
+  background-color: #f1f1f1;
+  color: #151515;
+}
+
+#button-3 .checkbox:checked~.layer {
+  background-color: #fcebeb;
 }

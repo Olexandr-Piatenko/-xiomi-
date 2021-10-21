@@ -117,6 +117,7 @@ body {
   padding: 20px 35px;
   transition: all 0.5s;
   border-radius: 25px;
+  z-index: 10;
   /* border: 1px solid transparent; */
 }
 
@@ -599,14 +600,13 @@ body {
 p.content__text-bottom {
   padding-bottom: 15px;
 }
-.carousel__container {
- 
-}
+
+.carousel__container {}
 
 .carousel {
-  /* background-position: center center;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
   min-height: 578px;
 }
 
@@ -684,6 +684,198 @@ p.content__text-bottom {
 
 .slick-next {
   margin-left: 90px;
+}
+
+.question {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1310px;
+  padding-top: 120px;
+  overflow: hidden;
+}
+
+.container {}
+
+.question__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.question__block {
+  max-width: 415px;
+}
+
+.question__block-title {
+  margin-bottom: 30px;
+}
+
+.question__block-text {
+  max-width: 280px;
+  padding: 10px 0;
+}
+
+.question__btn {
+  margin-top: 65px;
+  z-index: 10;
+}
+
+.question__content {
+  max-width: 640px;
+}
+
+.question__list {
+  list-style: none;
+}
+
+.question__item {
+  position: relative;
+}
+
+.question__item::after {
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: #FF4C0D;
+  position: absolute;
+  top: 45px;
+}
+
+.question__item-title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+
+.question__item-text {
+  margin-bottom: 45px;
+}
+
+.question__bottom {
+  position: relative;
+}
+
+.question__card {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+  border-radius: 15px;
+  padding: 0 60px;
+  margin-top: 30px;
+}
+
+/* .question__card::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  top: 45px;
+} */
+
+.card__info {}
+
+.card__info-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 110%;
+  padding-top: 120px;
+}
+
+.card__info-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FF4C0D;
+  margin-top: 25px;
+}
+
+.question__theme-button {
+  margin: 65px 0 110px;
+}
+
+.theme-button {}
+
+.button {}
+
+.r {}
+
+.checkbox {}
+
+.knobs {}
+
+.layer {}
+
+.carousel__btn {}
+
+.card__box {
+  margin-top: 120px;
+}
+
+.card__box-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.card__box-list {
+  list-style: none;
+}
+
+.card__box-ittem {
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+#button-2 .knobs:before {
+  content: 'Белый';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 100%;
+  /* color: #151515; */
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  padding: 15px 0;
+  /* background-color: #f1f1f1; */
+  border-radius: 65px;
+  transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+}
+
+#button-2 .checkbox:active+.knobs:before {
+  width: 46px;
+  border-radius: 100px;
+}
+
+#button-2 .checkbox:checked:active+.knobs:before {
+  margin-left: -26px;
+}
+
+#button-2 .checkbox:checked+.knobs:before {
+  content: 'Черный';
+  left: 125px;
+  background-color: #151515;
+  color: #f1f1f1;
+}
+
+#button-2 .checkbox:checked~.layer {
+  background-color: #fcebeb;
+}
+
+[role=button], [type=button], [type=reset], [type=submit], button {
+  cursor: pointer;
+  color: inherit
 }
 
 @font-face {
