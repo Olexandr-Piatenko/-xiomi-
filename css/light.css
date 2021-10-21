@@ -279,3 +279,15 @@ body {
 #button-3 .checkbox:checked~.layer {
   background-color: #fcebeb;
 }
+
+.footer {
+  background-color: #dfdfdf;
+}
+
+.footer__info-text {
+  color: #151515;
+}
+
+.foooter__contact-phone {
+  color: #151515;
+}

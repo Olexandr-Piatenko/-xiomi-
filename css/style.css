@@ -690,7 +690,7 @@ p.content__text-bottom {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 1310px;
+  min-height: 1260px;
   padding-top: 120px;
   overflow: hidden;
 }
@@ -877,6 +877,31 @@ p.content__text-bottom {
   cursor: pointer;
   color: inherit
 }
+
+.footer {
+  
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.footer__info-text {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+p.footer__info-text:nth-child(2) {
+margin-top: 15px;
+}
+
+.foooter__contact {
+  text-align: right;
+}
+
+.foooter__contact-phone {}
 
 @font-face {
   font-family: 'Gilroy Medium';
